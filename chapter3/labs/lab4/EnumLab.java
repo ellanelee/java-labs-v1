@@ -13,10 +13,17 @@ public class EnumLab {
         System.out.println("===== 요일 Enum 활용하기 =====");
         System.out.println("요일을 입력하세요 (월, 화, 수, 목, 금, 토, 일): ");
         String input = scanner.nextLine();
-        
+
         // TODO: 입력받은 요일에 해당하는 DayOfWeek Enum 상수를 찾아 switch 문에서 활용하세요.
         // 평일(월~금)인 경우 "평일입니다."를, 주말(토, 일)인 경우 "주말입니다."를 출력하세요.
-        
+
+        Weekday weekday = WeekDay.getWeekdayByDescription();
+
+
+        switch (input) {
+
+
+        }
         
         // 2. 계절 Enum 활용하기
         System.out.println("\n===== 계절 Enum 활용하기 =====");
@@ -49,4 +56,31 @@ public class EnumLab {
         
         scanner.close();
     }
-} 
+}
+
+enum Weekdays {
+    MONDAY("월"),
+    TUESDAY("화"),
+    WEDNESDAY("수"),
+    THURSDAY("목"),
+    FRIDAY("금"),
+    SATURDAY("토"),
+    SUNDAY("일");
+
+    private final String description;
+
+    Weekdays(String description){
+        this.description = description;
+    }
+
+
+    public static Weekdays getWeekdayByDescription(String description){
+        for (Weekdays weekday : Weekdays.values()) {
+            if( description.equals(weekday.description)) {
+                return weekday;
+            }
+        }
+        return null;
+    }
+
+}
