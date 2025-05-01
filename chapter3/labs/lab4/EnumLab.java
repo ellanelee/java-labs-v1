@@ -17,12 +17,17 @@ public class EnumLab {
         // TODO: 입력받은 요일에 해당하는 DayOfWeek Enum 상수를 찾아 switch 문에서 활용하세요.
         // 평일(월~금)인 경우 "평일입니다."를, 주말(토, 일)인 경우 "주말입니다."를 출력하세요.
 
-        Weekday weekday = WeekDay.getWeekdayByDescription();
+        Weekdays aDay = Weekdays.getWeekdayByDescription(input);
 
-
-        switch (input) {
-
-
+        switch (aDay) {
+            case MONDAY : case TUESDAY : case WEDNESDAY: case THURSDAY : case FRIDAY:
+            System.out.println("평일입니다");
+            break;
+            case SATURDAY : case SUNDAY:
+                System.out.println("주말입니다");
+                break;
+            default :
+                System.out.println("정확한 요일을 입력해주세요. 모든 문자는 대문자입니다");
         }
         
         // 2. 계절 Enum 활용하기
