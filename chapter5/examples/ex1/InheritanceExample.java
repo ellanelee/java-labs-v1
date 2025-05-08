@@ -25,7 +25,7 @@ public class InheritanceExample {
         student.study();
         student.attendClass();
         student.displayStudentInfo();
-        
+
         System.out.println("\n===== 상속 관계 확인 =====");
         // instanceof 연산자를 사용한 객체 타입 확인
         System.out.println("person은 Person의 인스턴스인가? " + (person instanceof Person));

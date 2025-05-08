@@ -49,11 +49,10 @@ public class Calculator {
         System.out.println("이 모델은 "+ this.model);
         System.out.println(" Number of Calculations: " + this.numberOfCalculations);
         System.out.println(" Number of Calculators : " + this.numberOfCalculators);
-
     }
     
     // TODO: 현재까지 생성된 계산기의 총 개수를 반환하는 static 메소드를 정의하세요.
-    public static int currentNumberofCalbulators(){
+    public static int currentNumberOfCalculators(){
         return numberOfCalculators;
     }
     

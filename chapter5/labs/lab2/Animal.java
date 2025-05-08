@@ -8,14 +8,19 @@ package chapter5.labs.lab2;
  */
 public abstract class Animal {
     // TODO: 동물의 기본 속성 정의 (예: 이름, 나이)
-    
-    
+    public String name;
+    public int age;
     // TODO: 생성자 정의
-    
+
+    Animal(){}
+    Animal(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
     
     // TODO: sound() 추상 메소드 선언
-    
+    public abstract void sound();
     
     // TODO: 동물 정보를 출력하는 메소드 정의
-    
+    public abstract void displayAnimalInfo();
 } 

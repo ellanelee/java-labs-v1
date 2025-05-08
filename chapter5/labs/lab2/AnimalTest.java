@@ -10,21 +10,32 @@ public class AnimalTest {
         System.out.println("Lab 2: 추상 클래스 활용하기 실습");
         
         // TODO: Dog 객체 생성
-        
+        Dog aDog = new Dog("개",10,"콜리");
         
         // TODO: Cat 객체 생성
-        
+        Cat aCat = new Cat ("고양이", 5, "white");
+
         
         // TODO: Bird 객체 생성
-        
-        
+        Bird aBird = new Bird ("조류", 2, 13, "참새");
+
         // TODO: 각 동물의 정보와 소리 출력
-        
+        aDog.sound();
+        aCat.sound();
+        aBird.sound();
         
         // TODO: 배열을 사용하여 여러 Animal 객체 관리하기
-        
+        Animal[] animals = new Animal[3];
+        animals[0] = aDog;
+        animals[1] = aCat;
+        animals[2] = aBird;
         
         // TODO: 모든 동물에 대해 반복하여 정보와 소리 출력하기
-        
+        for (Animal animal: animals) {
+            System.out.println(animal.name+"의 내용을 출력합니다");
+            animal.sound();
+            animal.displayAnimalInfo();
+            System.out.println();
+        }
     }
 } 

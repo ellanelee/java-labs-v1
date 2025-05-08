@@ -20,9 +20,9 @@ public class AccessModifierExample {
         myClass.defaultField = 300;
         myClass.defaultMethod();
         
-        // private 멤버 접근 - 같은 클래스 내에서만 접근 가능
-        // myClass.privateField = 400; // 에러: private 필드에 접근 불가
-        // myClass.privateMethod(); // 에러: private 메소드에 접근 불가
+//         private 멤버 접근 - 같은 클래스 내에서만 접근 가능
+//         myClass.privateField = 400; // 에러: private 필드에 접근 불가
+//         myClass.privateMethod(); // 에러: private 메소드에 접근 불가
         
         // private 멤버는 public 메소드를 통해 간접적으로 접근 가능
         myClass.setPrivateField(400);
@@ -36,11 +36,11 @@ public class AccessModifierExample {
         otherClass.publicField = 500;
         otherClass.publicMethod();
         
-        // protected, default, private 멤버는 다른 패키지에서 접근 불가
-        // otherClass.protectedField = 600; // 에러: protected 필드에 다른 패키지에서 접근 불가
-        // otherClass.protectedMethod(); // 에러: protected 메소드에 다른 패키지에서 접근 불가
-        // otherClass.defaultField = 700; // 에러: default 필드에 다른 패키지에서 접근 불가
-        // otherClass.defaultMethod(); // 에러: default 메소드에 다른 패키지에서 접근 불가
+//         protected, default, private 멤버는 다른 패키지에서 접근 불가
+//         otherClass.protectedField = 600; // 에러: protected 필드에 다른 패키지에서 접근 불가
+//         otherClass.protectedMethod(); // 에러: protected 메소드에 다른 패키지에서 접근 불가
+//         otherClass.defaultField = 700; // 에러: default 필드에 다른 패키지에서 접근 불가
+//         otherClass.defaultMethod(); // 에러: default 메소드에 다른 패키지에서 접근 불가
         
         // 접근자(getter)와 설정자(setter)를 통한 접근
         otherClass.setPrivateField(800);

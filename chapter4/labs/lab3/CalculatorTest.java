@@ -15,7 +15,7 @@ public class CalculatorTest {
         
         // TODO: 객체 생성 없이 static 메소드를 호출하여 원의 면적과 둘레를 계산하세요.
         System.out.println("원의 면적은 "+ Calculator.circularDimension(5));
-        System.out.println("원의 둘레은 "+ Calculator.circumference(5));
+        System.out.println("원의 둘레는 "+ Calculator.circumference(5));
 
         // TODO: 객체 생성 없이 static 메소드를 호출하여 사각형의 면적을 계산하세요.
         System.out.println("사각형의 면적은 "+Calculator.square(4,5));

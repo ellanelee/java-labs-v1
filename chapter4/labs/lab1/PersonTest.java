@@ -13,21 +13,20 @@ public class PersonTest {
         Person mrJohn = new Person("John", 20, "Male");
 
         // TODO: 생성한 객체의 정보를 출력하세요.
-        mrJohn.information();
+        mrJohn.displayInfo();
 
-        // TODO: 생일이 지나 나이가
-        mrJohn.addAge();
-        mrJohn.information();
+        // TODO: 생일이 지나 나이가 증가
+        mrJohn.checkAge("2004-08-13");
 
         // TODO: 이름이 Emily, 나이가 25, 성별이 Female인 두 번째 Person 객체를 생성하세요.
         Person msEmily = new Person("Emily", 25, "Female");
 
         // TODO: 두 번째 객체의 정보를 출력하세요.
-        msEmily.information();
+        msEmily.displayInfo();
 
         // TODO: 두 번째 객체의 나이를 증가시키고 정보를 다시 출력하세요.
-        msEmily.addAge();
-        msEmily.information();
+        msEmily.checkAge("1999-01-01");
+        msEmily.displayInfo();
 
         // TODO: 추가로 여러 Person 객체를 생성하여 배열로 관리하고 모든 객체의 정보를 출력하세요.
         Person[] people = new Person[2];
@@ -35,7 +34,7 @@ public class PersonTest {
         people[1] = msEmily;
 
         for (Person p : people) {
-            p.information();
+            p.displayInfo();
         }
     }
 } 
